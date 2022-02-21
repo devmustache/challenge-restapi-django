@@ -7,8 +7,8 @@ class Gender(models.TextChoices):
     Female = 'F'
 
 class Profile (models.Model):
-    firstName = models.CharField(max_length=30)
-    lastName = models.CharField(max_length=30)
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
     age = models.PositiveSmallIntegerField(default=1,
         validators=[
             MaxValueValidator(120),
@@ -18,4 +18,4 @@ class Profile (models.Model):
 
 
     def __str__(self):
-        return self.firstName
+        return self.first_name
