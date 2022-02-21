@@ -1,7 +1,7 @@
 # challenge-restapi-django
 An User Profile CRUD application made with Django for a job interview
 
-FYI: Project created in windows 10 OS. The cmds described in referred steps may change if you are using Linux/MacOS. IDE: Visual Studio Code
+###### FYI: Project created in windows 10 OS. The cmds described in referred steps may change if you are using Linux/MacOS. IDE: Visual Studio Code
 
 ## Describing Rest API
 
@@ -45,8 +45,8 @@ FYI: Project created in windows 10 OS. The cmds described in referred steps may 
        - cp env.example .env<br/>
        - change .env file to your credentials and settings of postgres<br/>
 2.3. Up and running <br/>
-       - Create virtual env: python -m venv /path/to/new/virtual/environment or python3 -m venv /path/to/new/virtual/environment
-       - Activate venv or env file:  execute this command in windows inside venv or env folder: . .\Scripts\activate or source .\Scripts\activate
+       - Create virtual env: python -m venv /path/to/new/virtual/environment or python3 -m venv /path/to/new/virtual/environment <br/>
+       - Activate venv or env file:  execute this command in windows inside venv or env folder: . .\Scripts\activate or source .\Scripts\activate <br/>
        - Install dependencies: pip install -r requirements.txt <br/>
        - Make migration of db: python manage.py migrate <br/>
        - Run server locally: python manage.py runserver<br/>
