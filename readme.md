@@ -1,7 +1,29 @@
 # challenge-restapi-django
-An User CRUD application made with Django for a job interview
+An User Profile CRUD application made with Django for a job interview
 
-#### How to run this application locally on Windows?
+FYI: Project created in windows 10 OS. The cmds described in referred steps may change if you are using Linux/MacOS. IDE: Visual Studio Code
+
+## Describing Rest API
+
+#### Rest API endpoints:
+<ul>
+   <li>POST /api/profile => Create user profile.</li>
+   <li>GET /api/profile => Get all profiles (using pagination and search option ie: /profile?name='Marco' gets all profiles with that name).</li>
+   <li>GET /api/profile/{ìd} => Get a single user profile.</li>
+</ul>
+
+#### Representation of user profile data:
+
+<pre>
+{
+"firstName": "Marco Túlio", : String
+"lastName": "Fonseca", : String
+"age":'32', : Integer
+"sex": "M" : Enum
+}
+</pre>
+
+## How to run this application locally?
 
 #### 1 Install python and db.
 
@@ -23,6 +45,8 @@ An User CRUD application made with Django for a job interview
        - cp env.example .env<br/>
        - change .env file to your credentials and settings of postgres<br/>
 2.3. Up and running <br/>
+       - Create virtual env: python -m venv /path/to/new/virtual/environment or python3 -m venv /path/to/new/virtual/environment
+       - Activate venv or env file:  execute this command in windows inside venv or env folder: . .\Scripts\activate or source .\Scripts\activate
        - Install dependencies: pip install -r requirements.txt <br/>
        - Make migration of db: python manage.py migrate <br/>
        - Run server locally: python manage.py runserver<br/>
