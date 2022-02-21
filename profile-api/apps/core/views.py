@@ -12,7 +12,7 @@ class ProfileList(APIView):
         queryset = Profile.objects.all()
         name_query_param = self.request.query_params.get('name', None)
         if name_query_param is not None:
-            queryset = queryset.filter(first_name__icontains=name_query_param)
+            queryset = queryset.filter(first_name = name_query_param)
         serializer = ProfileSerializer(queryset, many=True)
         return Response(serializer.data)
 
