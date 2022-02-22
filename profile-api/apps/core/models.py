@@ -14,8 +14,7 @@ class Profile (models.Model):
             MaxValueValidator(120),
             MinValueValidator(1)
         ])
-    sex = models.CharField(max_length=1, choices=Gender.choices, null=True)
-
+    sex = models.CharField(max_length=1, choices=Gender.choices)
 
     def __str__(self):
         return self.first_name

@@ -31,8 +31,8 @@ class ProfileList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request, format=None):
-        profile_detailed = self.get_object()
-        profile_detailed.delete()
+        profile = self.get_object()
+        profile.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
         
 class ProfileDetail(APIView):

@@ -30,7 +30,7 @@ An User Profile CRUD application made with Django for a job interview
 1.1. First of all, install last stable version of python (https://www.python.org/downloads/)                 
           -  02/18/2022: last version was python -v 3.10.2 <br/>
           -  Edit environment variable PATH and add %PYTHONPATH%. <br/>
-          -  set variable %PYTHONPATH% with value: _**your directory to python**_ <br/>
+          -  set variable %PYTHONPATH% with value: _**your/directory/to/python/**_ and _**your/directory/to/python/Scripts**_<br/>
           -  Restart PC  <br/>
       
 1.2. Install Postgresql database <br/>
