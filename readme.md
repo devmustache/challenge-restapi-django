@@ -23,6 +23,13 @@ An User Profile CRUD application made with Django for a job interview
 }
 </pre>
 
+Extra points:
+- [x] Add Flake8 (code lint)
+- [x] Unit test
+- [ ] User Authentication DRF
+- [ ] Admin site modifications
+
+
 ## How to run this application locally?
 
 #### 1 Install python and db.

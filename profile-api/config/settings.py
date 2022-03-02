@@ -88,7 +88,15 @@ DATABASES = {
         "PASSWORD": os.getenv("POSTGRES_PASSWORD", "admin"),
         "HOST": os.getenv("POSTGRES_HOST", "localhost"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
-    }
+    },
+    'TEST': {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("POSTGRES_DB", "test_userprofile"),
+        "USER": os.getenv("POSTGRES_USER", "postgres"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "testadmin"),
+        "HOST": os.getenv("POSTGRES_HOST", "localhost"),
+        "PORT": os.getenv("POSTGRES_PORT", "5532"),
+    },
 }
 
 # Password validation

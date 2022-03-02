@@ -6,7 +6,13 @@ from core.models import Profile
 from core.serializer import ProfileSerializer
 
 class ProfileList(APIView):
+    
     serializer_class = ProfileSerializer
+    def get_object(self):
+        try: 
+            return Profile.objects.all()
+        except Profile.DoesNotExist:
+            raise Http404
 
     def get(self, request, format=None):
         queryset = Profile.objects.all()

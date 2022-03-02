@@ -99,3 +99,6 @@ venv.bak/
 
 # mkdocs documentation
 /site
+
+#faker docs
+docs.txt
